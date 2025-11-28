@@ -15,28 +15,18 @@
       --text-muted: #555555;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-                   Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+                   Arial, "Noto Sans", sans-serif;
       background-color: var(--bg);
       color: var(--text-main);
       line-height: 1.7;
     }
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
     .page {
       max-width: 900px;
@@ -62,41 +52,17 @@
       text-align: center;
     }
 
-    .avatar {
+    .avatar img {
+      width: 160px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
       margin-bottom: 12px;
     }
 
-    .avatar img {
-      width: 160px;
-      height: auto;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      background: #fff;
-    }
-
-    .name {
-      font-size: 26px;
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-
-    .title {
-      font-size: 15px;
-      font-weight: 500;
-      color: var(--accent);
-      margin-bottom: 6px;
-    }
-
-    .affiliation {
-      font-size: 14px;
-      color: var(--text-muted);
-      margin-bottom: 4px;
-    }
-
-    .email {
-      font-size: 14px;
-      margin-bottom: 8px;
-    }
+    .name { font-size: 26px; font-weight: 700; }
+    .title { font-size: 15px; color: var(--accent); margin-bottom: 6px; }
+    .affiliation { font-size: 14px; color: var(--text-muted); margin-bottom: 4px; }
+    .email { font-size: 14px; margin-bottom: 8px; }
 
     .badges {
       margin-top: 6px;
@@ -107,25 +73,15 @@
     }
 
     .badge {
-      display: inline-flex;
-      align-items: center;
       font-size: 12px;
       padding: 6px 10px;
       border-radius: 999px;
       background-color: var(--accent-soft);
       border: 1px solid var(--border);
-      color: var(--text-main);
       font-weight: 500;
-      white-space: nowrap;
-    }
-
-    .badge span.icon {
-      font-size: 14px;
-      margin-right: 4px;
     }
 
     /* Section */
-
     section h2 {
       font-size: 18px;
       margin-bottom: 8px;
@@ -133,39 +89,12 @@
       padding-left: 8px;
     }
 
-    .section-content {
-      font-size: 14px;
-      color: var(--text-main);
-    }
+    .section-content { font-size: 14px; }
+    .section-content ul { margin-left: 18px; }
+    .section-content li { margin-bottom: 4px; }
 
-    .section-content p {
-      margin-bottom: 8px;
-    }
-
-    .section-content ul {
-      margin-left: 18px;
-      margin-top: 4px;
-    }
-
-    .section-content li {
-      margin-bottom: 4px;
-    }
-
-    .muted {
-      color: var(--text-muted);
-    }
-
-    .pub-year {
-      font-weight: 600;
-      margin-top: 6px;
-      margin-bottom: 2px;
-    }
-
-    .pub-item {
-      margin-left: 10px;
-      text-indent: -10px;
-      margin-bottom: 4px;
-    }
+    .pub-year { font-weight: 600; margin-top: 10px; }
+    .pub-item { margin-left: 10px; text-indent: -10px; margin-bottom: 4px; }
 
     footer {
       text-align: center;
@@ -177,275 +106,254 @@
     @media (min-width: 700px) {
       .header-card {
         flex-direction: row;
-        align-items: center;
         text-align: left;
       }
-      .avatar {
-        margin-right: 20px;
-        margin-bottom: 0;
-      }
+      .avatar { margin-right: 20px; margin-bottom: 0; }
     }
   </style>
 </head>
+
 <body>
-  <div class="page">
+<div class="page">
 
-    <!-- Header -->
-    <div class="card header-card">
-      <div class="avatar">
-        <img src="jiangmin_ding.jpg" alt="Jiangmin Ding">
+  <!-- Header -->
+  <div class="card header-card">
+    <div class="avatar">
+      <img src="jiangmin_ding.jpg" alt="Jiangmin Ding">
+    </div>
+    <div>
+      <div class="name">Dr. Jiangmin Ding</div>
+      <div class="title">Postdoctoral Researcher</div>
+      <div class="affiliation">
+        BK21 Digital Finance Education & Research Center, College of Business<br>
+        Pusan National University, Busan, South Korea
       </div>
-      <div>
-        <div class="name">Dr. Jiangmin Ding</div>
-        <div class="title">Postdoctoral Researcher</div>
-        <div class="affiliation">
-          BK21 Digital Finance Education &amp; Research Center, College of Business<br>
-          Pusan National University, Busan, South Korea
-        </div>
-        <div class="email">
-          <strong>Email:</strong> djm0823@pusan.ac.kr
-        </div>
-        <div class="badges">
-          <a class="badge" href="https://orcid.org/0009-0007-4939-6586" target="_blank" rel="noopener">
-            <span class="icon">🟢</span> ORCID
-          </a>
-          <a class="badge" href="https://scholar.google.com/citations?user=ah19BP8AAAAJ&hl=ko&oi=ao" target="_blank" rel="noopener">
-            <span class="icon">📚</span> Google Scholar
-          </a>
-          <a class="badge" href="https://www.linkedin.com/in/jiangmin-ding0823/" target="_blank" rel="noopener">
-            <span class="icon">💼</span> LinkedIn
-          </a>
-          <a class="badge" href="https://www.researchgate.net/profile/Jiangmin-Ding?ev=hdr_xprf" target="_blank" rel="noopener">
-            <span class="icon">🔬</span> ResearchGate
-          </a>
-        </div>
+      <div class="email"><strong>Email:</strong> djm0823@pusan.ac.kr</div>
+
+      <div class="badges">
+        <a class="badge" href="https://orcid.org/0009-0007-4939-6586" target="_blank">🟢 ORCID</a>
+        <a class="badge" href="https://scholar.google.com/citations?user=ah19BP8AAAAJ&hl=ko&oi=ao" target="_blank">📚 Google Scholar</a>
+        <a class="badge" href="https://www.linkedin.com/in/jiangmin-ding0823/" target="_blank">💼 LinkedIn</a>
+        <a class="badge" href="https://www.researchgate.net/profile/Jiangmin-Ding?ev=hdr_xprf" target="_blank">🔬 ResearchGate</a>
       </div>
     </div>
-
-    <!-- About Me -->
-    <div class="card">
-      <section>
-        <h2>About Me</h2>
-        <div class="section-content">
-          <p>
-            Dr. Jiangmin Ding is a postdoctoral researcher at Pusan National University.
-            His research focuses on how <strong>AI-enabled innovation</strong>,
-            <strong>digital transformation</strong>, and <strong>organizational capabilities</strong>
-            enhance <strong>resilience</strong> and <strong>sustainability</strong> in global supply chains.
-          </p>
-          <p>
-            He has published and reviewed for international journals and welcomes collaborations in
-            supply chain management, sustainability, and digital business innovation.
-          </p>
-        </div>
-      </section>
-    </div>
-
-    <!-- Research Interests -->
-    <div class="card">
-      <section>
-        <h2>Research Interests</h2>
-        <div class="section-content">
-          <ul>
-            <li>Knowledge Management</li>
-            <li>AI-enabled Innovation</li>
-            <li>Supply Chain Management</li>
-            <li>Customer-Centric Logistics Strategies</li>
-          </ul>
-        </div>
-      </section>
-    </div>
-
-    <!-- Publications (你可以以后继续补充完整列表) -->
-    <div class="card">
-  <section>
-    <h2>Publications</h2>
-    <div class="section-content">
-
-      <div class="pub-year">2025</div>
-
-      <div class="pub-item">
-        <strong>Ding, J.M.</strong>, Lee, E.S.* & Lee, T.W. (2025).
-        Dynamic Knowledge Management and Supply Chain Integration: Driving Innovation and Resilience in Korean Shipping SMEs.
-        <em>Asia Pacific Business Review</em>. (SSCI)
-      </div>
-
-      <div class="pub-item">
-        <strong>Ding, J.M.</strong> & Hong, G.H.* (2025).
-        Fostering Loyalty and Creativity: How Organizational Culture Shapes Employee Commitment and Innovation in South Korean Firms.
-        <em>Behavioral Sciences</em>, 15(4), 529. (SSCI)
-      </div>
-
-      <div class="pub-item">
-        Ren, Y., Lee, E.S.* & <strong>Ding, J.M.</strong> (2025).
-        ESG as a Market Signal in the New Energy Vehicle Era: Effects on Consumer Green Perceived Value and Purchase Intention.
-        <em>Journal of International Trade & Commerce</em>, 21(5), 131–147. (KCI)
-      </div>
-
-      <div class="pub-item">
-        <strong>Ding, J.M.</strong>, Lee, E.S.* & Li, L. (2025).
-        Building Trust and Value in Digital Organizations: A Dual-Theory Perspective.
-        <em>Journal of Contents and Industry</em>, 7(3), 87–93. (KCI)
-      </div>
-
-      <div class="pub-item">
-        <strong>Ding, J.</strong>, Lee, E.S.* & Han. H. (2025).
-        Inside the Box, Across Borders: POP MART’s Internationalization Strategy Decoded.
-        <em>International Business Review</em>, 29(4), forthcoming. (KCI)
-      </div>
-
-
-      <div class="pub-year">2024</div>
-
-      <div class="pub-item">
-        <strong>Ding, J.M.</strong> & Lee, E.S.* (2024).
-        Improving the Maritime Supply Chain Resilience: The Role of Firms’ Dynamic Knowledge Management and Organizational Innovation.
-        <em>Journal of Organizational Change Management</em>, 37(6), 1322–1339. (SSCI)
-      </div>
-
-      <div class="pub-item">
-        <strong>Ding, J.M.</strong> & Lee, E.S.* (2024).
-        Promoting Consumers’ Sustainable Consumption of Online Retail Cold Chain Logistics Services:
-        Extended Applications of S-O-R and Cognitive–Affective–Conative Theories.
-        <em>Behavioral Sciences</em>, 14(9), 771. (SSCI)
-      </div>
-
-      <div class="pub-item">
-        Han, H.J. & <strong>Ding, J.M.</strong>* (2024).
-        Measures to Overcome Population Decline and Regional Extinction Crises of Pan-tourism Aspects in Korea:
-        An Exploratory Study Using ChatGPT.
-        <em>Global Business and Finance Review</em>, 29(7), 78–92. (SCOPUS)
-      </div>
-
-      <div class="pub-item">
-        <strong>Ding, J.M.</strong>, Yang, S.Q. & Lee, E.S.* (2024).
-        Exploring Consumer Purchase Intentions on Fresh Food E-Commerce Platforms through the Integration of Value-Based Adoption and IS Success Models.
-        <em>Journal of Business Convergence</em>, 9(5), 133–140. (KCI)
-      </div>
-
-      <div class="pub-item">
-        Liang, C.J., <strong>Ding, J.M.</strong>* & Lee, E.S. (2024).
-        Exploring the Impact of Product Attributes on Consumer Perceived Value and Purchase Intention:
-        Taking Green Household Appliances as an Example.
-        <em>Journal of International Trade & Commerce</em>, 20(2), 23–38. (KCI)
-      </div>
-
-      <div class="pub-item">
-        Suntornprawetrawet, A., Lee, E.S.* & <strong>Ding, J.M.</strong> (2024).
-        Reconfiguring Logistics Competitiveness: The Influence of Blockchain Technology.
-        <em>Journal of Business Convergence</em>, 9(3), 37–47. (KCI)
-      </div>
-
-
-      <div class="pub-year">2023</div>
-
-      <div class="pub-item">
-        <strong>Ding, J.M.</strong> & Lee, E.S.* (2023).
-        Analyzing Tesla’s Internationalization Strategies: A Closer Look at the Korean and Chinese Markets.
-        <em>Journal of Economics, Marketing & Management</em>, 11(5), 15–27. (KCI)
-      </div>
-
-      <div class="pub-item">
-        Lu, B.W., <strong>Ding, J.M.</strong> & Lee, E.S.* (2023).
-        The Impact of ESG on Corporate Value and Performance:
-        A Comparative Study of Clothing Manufacturing and Service Industries in China.
-        <em>Journal of Industrial Innovation</em>, 39(4), 50–66. (KCI)
-      </div>
-
-      <div class="pub-item">
-        Khin, H.Y., <strong>Ding, J.M.</strong> & Lee, E.S.* (2023).
-        Distance Differences in Entry Mode Choices: Evidence from Multinational Firms in South Korea.
-        <em>Journal of Business Convergence</em>, 8(5), 113–121. (KCI)
-      </div>
-
-      <div class="pub-item">
-        Liu, Y.H., Lee, E.S.* & <strong>Ding, J.M.</strong> (2023).
-        Logistics Service Quality and Consumer Repurchase Intention in Cross-Border E-Commerce:
-        Moderating Roles of Consumer Ethnocentrism and Cosmopolitanism.
-        <em>Korean Management Consulting Review</em>, 23(5), 179–192. (KCI)
-      </div>
-
-      <div class="pub-item">
-        <strong>Ding, J.M.</strong> & Lee, E.S.* (2023).
-        How Does Ambidextrous Learning Influence Supply Chain Integration and Resilience?
-        <em>Journal of Business Convergence</em>, 8(4), 55–62. (KCI)
-      </div>
-
-
-      <div class="pub-year">2022</div>
-
-      <div class="pub-item">
-        <strong>Ding, J.M.</strong> & Lee, E.S.* (2022).
-        Determining Factors of Reverse Logistics in Electronic Waste Products:
-        Evidence from Korea and China.
-        <em>Journal of Distribution Research</em>, 26(1), 15–26. (KCI)
-     
-    </div>
-  </section>
-</div>
-
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- Education -->
-    <div class="card">
-      <section>
-        <h2>Education</h2>
-        <div class="section-content">
-          <p><strong>Ph.D. in Business Administration</strong><br>
-             Pusan National University, Busan, South Korea</p>
-          <p><strong>M.A. in International Trade</strong><br>
-             Pusan National University, Busan, South Korea</p>
-          <p><strong>B.A. in Korean Studies</strong><br>
-             Tianjin Foreign Studies University Binhai International College, Tianjin, China</p>
-        </div>
-      </section>
-    </div>
-
-    <!-- Honors & Awards -->
-    <div class="card">
-      <section>
-        <h2>Honors &amp; Awards</h2>
-        <div class="section-content">
-          <ul>
-            <li>Graduate Academic Excellence Award (President’s Award), Pusan National University (2025)</li>
-            <li>Chinese Government Award for Outstanding Self-financed Students Abroad (2024)</li>
-            <li>PNU-STAR Award (President’s Award), Pusan National University (2024)</li>
-            <li>BK21 Excellent Paper Award (President’s Award), Pusan National University (2024)</li>
-            <li>Best Paper Award, The 31st IAGBT-KITRI Conference (Sydney, 2023)</li>
-          </ul>
-        </div>
-      </section>
-    </div>
-
-    <!-- Academic Services -->
-    <div class="card">
-      <section>
-        <h2>Academic Services</h2>
-        <div class="section-content">
-          <p>Reviewer for:</p>
-          <ul>
-            <li><em>Humanities and Social Sciences Communications</em></li>
-            <li><em>Applied Economics</em> &amp; <em>Applied Economics Letters</em></li>
-            <li><em>Behavioral Sciences</em></li>
-            <li><em>Scientific Reports</em></li>
-            <li><em>Sustainability</em>, <em>Processes</em>, <em>Metrics</em>, <em>Administrative Sciences</em></li>
-            <li><em>Cogent Business &amp; Management</em></li>
-            <li><em>Discover Sustainability</em></li>
-            <li><em>Tourism and Hospitality</em></li>
-            <li><em>The Journal of China Studies</em></li>
-            <li><em>Applied Sciences</em></li>
-          </ul>
-        </div>
-      </section>
-    </div>
-
-    <footer>
-      © 2025 Jiangmin Ding. All rights reserved.
-    </footer>
-
   </div>
+
+
+  <!-- About -->
+  <div class="card">
+    <section>
+      <h2>About Me</h2>
+      <div class="section-content">
+        <p>
+        Dr. Jiangmin Ding is a postdoctoral researcher at Pusan National University.
+        His research focuses on how <strong>AI-enabled innovation</strong>,
+        <strong>digital transformation</strong>, and <strong>organizational capabilities</strong>
+        enhance resilience and sustainability in global supply chains.
+        </p>
+        <p>
+        He has published and reviewed for international journals and welcomes collaborations in
+        supply chain management, sustainability, and digital business innovation.
+        </p>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Research Interests -->
+  <div class="card">
+    <section>
+      <h2>Research Interests</h2>
+      <div class="section-content">
+        <ul>
+          <li>Knowledge Management</li>
+          <li>AI-enabled Innovation</li>
+          <li>Supply Chain Management</li>
+          <li>Customer-Centric Logistics Strategies</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Publications -->
+  <div class="card">
+    <section>
+      <h2>Publications</h2>
+      <div class="section-content">
+
+        <div class="pub-year">2025</div>
+
+        <div class="pub-item">
+          <strong>Ding, J.M.</strong>, Lee, E.S.* & Lee, T.W. (2025).
+          Dynamic Knowledge Management and Supply Chain Integration: Driving Innovation and Resilience in Korean Shipping SMEs.
+          <em>Asia Pacific Business Review</em>. (SSCI)
+        </div>
+
+        <div class="pub-item">
+          <strong>Ding, J.M.</strong> & Hong, G.H.* (2025).
+          Fostering Loyalty and Creativity: How Organizational Culture Shapes Employee Commitment and Innovation.
+          <em>Behavioral Sciences</em>. (SSCI)
+        </div>
+
+        <div class="pub-item">
+          Ren, Y., Lee, E.S.* & <strong>Ding, J.M.</strong> (2025).
+          ESG as a Market Signal in the New Energy Vehicle Era.
+          <em>Journal of International Trade & Commerce</em>. (KCI)
+        </div>
+
+        <div class="pub-item">
+          <strong>Ding, J.M.</strong>, Lee, E.S.* & Li, L. (2025).
+          Building Trust and Value in Digital Organizations.
+          <em>Journal of Contents and Industry</em>. (KCI)
+        </div>
+
+        <div class="pub-item">
+          <strong>Ding, J.</strong>, Lee, E.S.* & Han, H. (2025).
+          Inside the Box, Across Borders: POP MART’s Internationalization Strategy Decoded.
+          <em>International Business Review</em>. (KCI)
+        </div>
+
+
+        <div class="pub-year">2024</div>
+
+        <div class="pub-item">
+          <strong>Ding, J.M.</strong> & Lee, E.S.* (2024).
+          Improving the Maritime Supply Chain Resilience.
+          <em>Journal of Organizational Change Management</em>. (SSCI)
+        </div>
+
+        <div class="pub-item">
+          <strong>Ding, J.M.</strong> & Lee, E.S.* (2024).
+          Sustainable Consumption of Online Retail Cold Chain Logistics Services.
+          <em>Behavioral Sciences</em>. (SSCI)
+        </div>
+
+        <div class="pub-item">
+          Han, H.J. & <strong>Ding, J.M.</strong>* (2024).
+          Overcoming Population Decline via Pan-tourism Strategies: ChatGPT Study.
+          <em>Global Business and Finance Review</em>. (SCOPUS)
+        </div>
+
+        <div class="pub-item">
+          <strong>Ding, J.M.</strong>, Yang, S.Q. & Lee, E.S.* (2024).
+          Purchase Intention on Fresh Food E-Commerce Platforms.
+          <em>Journal of Business Convergence</em>. (KCI)
+        </div>
+
+        <div class="pub-item">
+          Liang, C.J., <strong>Ding, J.M.</strong>* & Lee, E.S. (2024).
+          Impact of Product Attributes on Consumer Green Perceived Value.
+          <em>Journal of International Trade & Commerce</em>. (KCI)
+        </div>
+
+        <div class="pub-item">
+          Suntornprawetrawet, A., Lee, E.S.* & <strong>Ding, J.M.</strong> (2024).
+          Blockchain Technology and Logistics Competitiveness.
+          <em>Journal of Business Convergence</em>. (KCI)
+        </div>
+
+
+        <div class="pub-year">2023</div>
+
+        <div class="pub-item">
+          <strong>Ding, J.M.</strong> & Lee, E.S.* (2023).
+          Tesla’s Internationalization: Korean & Chinese Markets.
+          <em>Journal of Economics, Marketing & Management</em>. (KCI)
+        </div>
+
+        <div class="pub-item">
+          Lu, B.W., <strong>Ding, J.M.</strong> & Lee, E.S.* (2023).
+          ESG and Corporate Value in China.
+          <em>Journal of Industrial Innovation</em>. (KCI)
+        </div>
+
+        <div class="pub-item">
+          Khin, H.Y., <strong>Ding, J.M.</strong> & Lee, E.S.* (2023).
+          Entry Mode Choices: Evidence from South Korea.
+          <em>Journal of Business Convergence</em>. (KCI)
+        </div>
+
+        <div class="pub-item">
+          Liu, Y.H., Lee, E.S.* & <strong>Ding, J.M.</strong> (2023).
+          Logistics Service Quality and Repurchase Intention.
+          <em>Korean Management Consulting Review</em>. (KCI)
+        </div>
+
+        <div class="pub-item">
+          <strong>Ding, J.M.</strong> & Lee, E.S.* (2023).
+          Ambidextrous Learning, Supply Chain Integration & Resilience.
+          <em>Journal of Business Convergence</em>. (KCI)
+        </div>
+
+
+        <div class="pub-year">2022</div>
+
+        <div class="pub-item">
+          <strong>Ding, J.M.</strong> & Lee, E.S.* (2022).
+          Determinants of Reverse Logistics in Electronic Waste.
+          <em>Journal of Distribution Research</em>. (KCI)
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Education -->
+  <div class="card">
+    <section>
+      <h2>Education</h2>
+      <div class="section-content">
+        <p><strong>Ph.D. in Business Administration</strong><br>Pusan National University</p>
+        <p><strong>M.A. in International Trade</strong><br>Pusan National University</p>
+        <p><strong>B.A. in Korean Studies</strong><br>Tianjin Foreign Studies University</p>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Awards -->
+  <div class="card">
+    <section>
+      <h2>Honors & Awards</h2>
+      <div class="section-content">
+        <ul>
+          <li>Graduate Academic Excellence Award (President’s Award), PNU (2025)</li>
+          <li>Chinese Government Award for Outstanding Students Abroad (2024)</li>
+          <li>PNU-STAR Award (President’s Award), PNU (2024)</li>
+          <li>BK21 Excellent Paper Award (President’s Award), PNU (2024)</li>
+          <li>Best Paper Award, 31st IAGBT-KITRI Conference, Sydney (2023)</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Academic Services -->
+  <div class="card">
+    <section>
+      <h2>Academic Services</h2>
+      <div class="section-content">
+        <p>Reviewer for:</p>
+        <ul>
+          <li>Humanities and Social Sciences Communications</li>
+          <li>Applied Economics / Applied Economics Letters</li>
+          <li>Behavioral Sciences</li>
+          <li>Scientific Reports</li>
+          <li>Sustainability / Processes / Metrics / Administrative Sciences</li>
+          <li>Cogent Business & Management</li>
+          <li>Discover Sustainability</li>
+          <li>Tourism and Hospitality</li>
+          <li>The Journal of China Studies</li>
+          <li>Applied Sciences</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <footer>© 2025 Jiangmin Ding. All rights reserved.</footer>
+
+</div>
 </body>
 </html>
