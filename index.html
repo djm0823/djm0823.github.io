@@ -39,6 +39,228 @@
     }
 
     .page {
-      max-width: 880px;
+      max-width: 900px;
       margin: 28px auto 40px;
-      padding: 0 14px 
+      padding: 0 16px 40px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
+    }
+
+    /* 头部 */
+
+    .header-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .avatar {
+      margin-bottom: 12px;
+    }
+
+    .avatar img {
+      width: 160px;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: #fff;
+    }
+
+    .name {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .title {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .affiliation {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .email {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .badges {
+      margin-top: 6px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background-color: var(--accent-soft);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .badge span.icon {
+      font-size: 14px;
+      margin-right: 4px;
+    }
+
+    /* 普通 section */
+
+    section h2 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      border-left: 4px solid var(--accent);
+      padding-left: 8px;
+    }
+
+    .section-content {
+      font-size: 14px;
+      color: var(--text-main);
+    }
+
+    .section-content p {
+      margin-bottom: 8px;
+    }
+
+    .section-content ul {
+      margin-left: 18px;
+      margin-top: 4px;
+    }
+
+    .section-content li {
+      margin-bottom: 4px;
+    }
+
+    .muted {
+      color: var(--text-muted);
+    }
+
+    .pub-year {
+      font-weight: 600;
+      margin-top: 6px;
+      margin-bottom: 2px;
+    }
+
+    .pub-item {
+      margin-left: 10px;
+      text-indent: -10px;
+      margin-bottom: 4px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 10px;
+    }
+
+    @media (min-width: 700px) {
+      .header-card {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+      }
+      .avatar {
+        margin-right: 20px;
+        margin-bottom: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <div class="card header-card">
+      <div class="avatar">
+        <img src="jiangmin_ding.jpg" alt="Jiangmin Ding">
+      </div>
+      <div>
+        <div class="name">Dr. Jiangmin Ding</div>
+        <div class="title">Postdoctoral Researcher</div>
+        <div class="affiliation">
+          BK21 Digital Finance Education &amp; Research Center, College of Business<br>
+          Pusan National University, Busan, South Korea
+        </div>
+        <div class="email">
+          <strong>Email:</strong> djm0823@pusan.ac.kr
+        </div>
+        <div class="badges">
+          <a class="badge" href="https://orcid.org/0009-0007-4939-6586" target="_blank" rel="noopener">
+            <span class="icon">🟢</span> ORCID
+          </a>
+          <a class="badge" href="https://scholar.google.com/citations?user=ah19BP8AAAAJ&hl=ko&oi=ao" target="_blank" rel="noopener">
+            <span class="icon">📚</span> Google Scholar
+          </a>
+          <a class="badge" href="https://www.linkedin.com/in/jiangmin-ding0823/" target="_blank" rel="noopener">
+            <span class="icon">💼</span> LinkedIn
+          </a>
+          <a class="badge" href="https://www.researchgate.net/profile/Jiangmin-Ding?ev=hdr_xprf" target="_blank" rel="noopener">
+            <span class="icon">🔬</span> ResearchGate
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="card">
+      <section>
+        <h2>About Me</h2>
+        <div class="section-content">
+          <p>
+            Dr. Jiangmin Ding is a postdoctoral researcher at Pusan National University.
+            His research focuses on how <strong>AI-enabled innovation</strong>,
+            <strong>digital transformation</strong>, and <strong>organizational capabilities</strong>
+            enhance <strong>resilience</strong> and <strong>sustainability</strong> in global supply chains.
+          </p>
+          <p>
+            He has published and reviewed for international journals and welcomes collaborations in
+            supply chain management, sustainability, and digital business innovation.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Research interests -->
+    <div class="card">
+      <section>
+        <h2>Research Interests</h2>
+        <div class="section-content">
+          <ul>
+            <li>Knowledge Management</li>
+            <li>AI-enabled Innovation</li>
+            <li>Supply Chain Management</li>
+            <li>Customer-Centric Logistics Strategies</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- Education -->
+    <div class="card">
+      <section>
+        <h2>Education</h2>
+        <div class="section-content">
+          <p><strong>Ph.D. in Business Administration</strong><br>
+             Pusan National University, Busan, South Korea</p>
+         
