@@ -1,0 +1,14 @@
+title: "Jiangmin Ding"
+description: "Academic homepage of Dr. Jiangmin Ding"
+url: "https://djm0823.github.io"
+baseurl: ""
+
+remote_theme: "RayeRen/acad-homepage"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+
+markdown: kramdown
