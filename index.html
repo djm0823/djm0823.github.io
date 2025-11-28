@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dr. Jiangmin Ding - Academic Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card-bg: #ffffff;
+      --border: #d5deec;
+      --accent: #1f5fa8;
+      --accent-soft: #e3edf7;
+      --text-main: #111111;
+      --text-muted: #555555;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+                   Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 32px auto;
+      padding: 0 16px 48px;
+    }
+
+    header {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+    }
+
+    .avatar {
+      flex: 0 0 160px;
+      text-align: center;
+    }
+
+    .avatar img {
+      width: 160px;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: #fff;
+    }
+
+    .header-text {
+      flex: 1 1 auto;
+    }
+
+    .name {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .affiliation {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .email {
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    .badges {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background-color: var(--accent-soft);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    .badge span.icon {
+      font-size: 14px;
+      margin-right: 4px;
+    }
+
+    main {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.4fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 860px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .avatar {
+        align-self: center;
+      }
+      main {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    section {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+    }
+
+    section h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      border-left: 4px solid var(--accent);
+      padding-left: 8px;
+    }
+
+    section h3 {
+      font-size: 15px;
+      margin: 10px 0 4px;
+    }
+
+    .section-content {
+      font-size: 14px;
+      color: var(--text-main);
+    }
+
+    .section-content p {
+      margin-bottom: 6px;
+    }
+
+    .section-content ul {
+      margin-left: 18px;
+      margin-top: 4px;
+    }
+
+    .section-content li {
+      margin-bottom: 4px;
+    }
+
+    .muted {
+      color: var(--text-muted);
+    }
+
+    .news-list li {
+      margin-bottom: 6px;
+    }
+
+    .pub-item {
+      margin-bottom: 10px;
+    }
+
+    .pub-year {
+      font-weight: 600;
+      margin-top: 6px;
+      margin-bottom: 2px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="avatar">
+        <img src="images/jiangmin_ding.jpg" alt="Jiangmin Ding">
+      </div>
+      <div class="header-text">
+        <div class="name">Dr. Jiangmin Ding</div>
+        <div class="title">Postdoctoral Researcher</div>
+        <div class="affiliation">
+          BK21 Digital Finance Education &amp; Research Center, College of Business<br>
+          Pusan National University, Busan, South Korea
+        </div>
+        <div class="email">
+          <strong>Email:</strong> djm0823@pusan.ac.kr
+        </div>
+        <div class="badges">
+          <a class="badge" href="https://orcid.org/0009-0007-4939-6586" target="_blank" rel="noopener">
+            <span class="icon">🟢</span> ORCID
+          </a>
+          <a class="badge" href="https://scholar.google.com/citations?user=ah19BP8AAAAJ&hl=ko&oi=ao" target="_blank" rel="noopener">
+            <span class="icon">📚</span> Google Scholar
+          </a>
+          <a class="badge" href="https://www.linkedin.com/in/jiangmin-ding0823/" target="_blank" rel="noopener">
+            <span class="icon">💼</span> LinkedIn
+          </a>
+          <a class="badge" href="https://www.researchgate.net/profile/Jiangmin-Ding?ev=hdr_xprf" target="_blank" rel="noopener">
+            <span class="icon">🔬</span> ResearchGate
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Left column -->
+      <div>
+        <section>
+          <h2>About Me</h2>
+          <div class="section-content">
+            <p>
+              Dr. Jiangmin Ding is a postdoctoral researcher at Pusan National University.
+              His research focuses on how <strong>AI-enabled innovation</strong>, <strong>digital transformation</strong>,
+              and <strong>organizational capabilities</strong> enhance <strong>resilience</strong> and
+              <strong>sustainability</strong> in global supply chains.
+            </p>
+            <p>
+              He has published and reviewed for international journals and welcomes collaborations in
+              supply chain management, sustainability, and digital business innovation.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Publications (Selected)</h2>
+          <div class="section-content">
+            <div class="pub-year">2025</div>
+            <div class="pub-item">
+              Ding, J.M., Lee, E.S.* &amp; Lee, T.W. (2025).
+              Dynamic Knowledge Management and Supply Chain Integration: Driving Innovation and Resilience in Korean Shipping SMEs.
+              <em>Asia Pacific Business Review</em>. (SSCI)
+            </div>
+            <div class="pub-item">
+              Ding, J.M. &amp; Hong, G.H.* (2025).
+              Fostering Loyalty and Creativity: How Organizational Culture Shapes Employee Commitment and Innovation in South Korean Firms.
+              <em>Behavioral Sciences</em>. (SSCI)
+            </div>
+            <div class="pub-item">
+              Ding, J., Lee, E.S.* &amp; Han, H. (2025).
+              Inside the Box, Across Borders: POP MART’s Internationalization Strategy Decoded.
+              <em>International Business Review</em>, 29(4), forthcoming. (KCI)
+            </div>
+
+            <div class="pub-year">2024</div>
+            <div class="pub-item">
+              Ding, J.M. &amp; Lee, E.S.* (2024).
+              Improving the Maritime Supply Chain Resilience: The Role of Firms’ Dynamic Knowledge Management and Organizational Innovation.
+              <em>Journal of Organizational Change Management</em>. (SSCI)
+            </div>
+            <div class="pub-item">
+              Ding, J.M. &amp; Lee, E.S.* (2024).
+              Promoting Consumers' Sustainable Consumption of Online Retail Cold Chain Logistics Services: Extended Applications of S-O-R and
+              Cognitive-Affective-Conative Theories.
+              <em>Behavioral Sciences</em>. (SSCI)
+            </div>
+            <div class="pub-item">
+              Han, H.J. &amp; Ding, J.M.* (2024).
+              Measures to Overcome Population Decline and Regional Extinction Crises of Pan-tourism Aspects in Korea: An Exploratory Study using ChatGPT.
+              <em>Global Business and Finance Review</em>. (SCOPUS)
+            </div>
+            <!-- 你可以之后继续往下补全部 publication 列表 -->
+          </div>
+        </section>
+      </div>
+
+      <!-- Right column -->
+      <div>
+        <section>
+          <h2>Research Interests</h2>
+          <div class="section-content">
+            <ul>
+              <li>Knowledge Management</li>
+              <li>AI-enabled Innovation</li>
+              <li>Supply Chain Management</li>
+              <li>Customer-Centric Logistics Strategies</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>News</h2>
+          <div class="section-content">
+            <ul class="news-list">
+              <li><strong>2025</strong> – Joined BK21 Digital Finance Education &amp; Research Center at Pusan National University as a postdoctoral researcher.</li>
+              <li><strong>2024</strong> – Received the <em>Chinese Government Award for Outstanding Self-financed Students Abroad</em>.</li>
+              <li><strong>2024</strong> – Awarded the <em>PNU-STAR Award (President’s Award)</em>.</li>
+              <li><strong>2023</strong> – Received the <em>Best Paper Award</em> at the 31st IAGBT-KITRI Conference (Sydney).</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <div class="section-content">
+            <p><strong>Ph.D. in Business Administration</strong><br>
+               Pusan National University, Busan, South Korea</p>
+            <p><strong>M.A. in International Trade</strong><br>
+               Pusan National University, Busan, South Korea</p>
+            <p><strong>B.A. in Korean Studies</strong><br>
+               Tianjin Foreign Studies University, Tianjin, China</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Honors &amp; Awards</h2>
+          <div class="section-content">
+            <ul>
+              <li>Graduate Academic Excellence Award (President’s Award), Pusan National University (2025)</li>
+              <li>Chinese Government Award for Outstanding Self-financed Students Abroad (2024)</li>
+              <li>PNU-STAR Award (President’s Award), Pusan National University (2024)</li>
+              <li>BK21 Excellent Paper Award (President’s Award), Pusan National University (2024)</li>
+              <li>Best Paper Award, The 31st IAGBT-KITRI Conference (Sydney, 2023)</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Academic Services</h2>
+          <div class="section-content">
+            <p>Reviewer for:</p>
+            <ul>
+              <li><em>Humanities and Social Sciences Communications</em></li>
+              <li><em>Scientific Reports</em></li>
+              <li><em>Applied Economics</em> &amp; <em>Applied Economics Letters</em></li>
+              <li><em>Behavioral Sciences</em></li>
+              <li><em>Sustainability</em>, <em>Processes</em>, <em>Metrics</em>, <em>Administrative Sciences</em></li>
+              <li><em>Cogent Business &amp; Management</em></li>
+              <li><em>Discover Sustainability</em></li>
+              <li><em>Tourism and Hospitality</em></li>
+              <li><em>The Journal of China Studies</em></li>
+              <li><em>Applied Sciences</em></li>
+              <li>and other related journals</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      © 2025 Jiangmin Ding. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
